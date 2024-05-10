@@ -1,0 +1,27 @@
+{
+  "name": "{{NAME}}",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "release": "electron-builder --win --x64 --publish=never"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "win": {
+    "icon": "icon.png"
+  },
+  "build": {
+    "productName": "{{NAME}}"
+  },
+  "devDependencies": {
+    "electron": "^30.0.3",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-traywindow-positioner": "^1.2.0"
+  }
+}
